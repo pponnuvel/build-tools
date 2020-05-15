@@ -1,0 +1,29 @@
+config:
+  raw.idmap: both 1000 1000
+  user.vendor-data: |
+    #cloud-config
+    packages:
+      - avahi-daemon vim jq silversearcher-ag libnss-mdns git build-essential
+    users:
+      - name: ponnuvel
+        ssh-authorized-keys:
+          - "ssh-rsa xxxxx user@host"
+        groups: admin
+        shell: /bin/bash
+        sudo: ALL=(ALL) NOPASSWD:ALL
+        passwd: "UNIX_ENCODED_PASSWORD_HERE_FROM_ETC_SHADOW(optional)"
+description: ""
+devices:
+  eth0:
+    name: eth0
+    network: lxdbr0
+    type: nic
+  home_directory:
+    path: /home/ponnuvel
+    source: /home/ponnuvel
+    type: disk
+  root:
+    path: /
+    pool: default
+    type: disk
+name: default

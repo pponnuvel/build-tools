@@ -1,0 +1,20 @@
+Spin a new lxc. Then follow:
+
+sed -i 's/# deb-src /deb-src /g' /etc/apt/sources.list
+sudo apt update
+sudo apt install ubuntu-dev-tools devscripts
+pull-lp-source PACKAGE focal
+cd PACKAGE-4.4.18
+sudo apt build-dep PACKAGE
+dch # make changes
+debuild -S 
+(or build without signing: debuild -i -us -uc -S)
+debsign -k pponnuvel@gmail.com PACKAGE_5.0-6ubuntu1_source.changes
+Create a ppa from the launchpad
+Upload with: dput ppa:pponnuvel/PACKAGE-5.0 PACKAGE_5.0-6ubuntu1_source.changes
+
+
+Docs:
+https://manpages.debian.org/stretch/devscripts/debuild.1.en.html
+https://help.launchpad.net/Packaging
+
