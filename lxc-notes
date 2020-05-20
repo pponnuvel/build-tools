@@ -4,7 +4,7 @@ sed -i 's/# deb-src /deb-src /g' /etc/apt/sources.list
 sudo apt update
 sudo apt install ubuntu-dev-tools devscripts
 pull-lp-source PACKAGE focal
-cd PACKAGE-4.4.18
+cd PACKAGE-VERSION
 sudo apt build-dep PACKAGE
 dch # make changes
 debuild -S 
