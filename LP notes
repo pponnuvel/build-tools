@@ -1,0 +1,2 @@
+Adding remote to Launchpad:
+git remote add launchpad git+ssh://pponnuvel@git.launchpad.net/~pponnuvel/+git/REPOSITORY_NAME
