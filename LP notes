@@ -1,2 +1,6 @@
 Adding remote to Launchpad:
 git remote add launchpad git+ssh://pponnuvel@git.launchpad.net/~pponnuvel/+git/REPOSITORY_NAME
+
+Adding remote back for master:
+git remote add origin https://git.launchpad.net/stsstack-bundles
+git branch --set-upstream-to=origin/master master
