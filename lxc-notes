@@ -26,4 +26,4 @@ https://packaging.ubuntu.com/html/setting-up-sbuild.html
 
 
 #######
-Get specific source e.g. pull-uca-source ceph 14.2.1-0ubuntu1
+Get specific source e.g. pull-uca-source ceph train 14.2.1-0ubuntu1~cloud0
