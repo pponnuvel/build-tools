@@ -4,7 +4,7 @@ sudo add-apt-repository cloud-archive:stein
 sudo apt update
 apt source ceph # for 13.2.9
 
-quilt new bug186543.patch
+quilt new bug<num>.patch
 for each file; do 
   - quilt add somefile
   - change somefile
