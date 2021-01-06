@@ -9,9 +9,9 @@
 3. pull-lp-source sosreport focal
 
 quilt new bug<num>.patch
-for each file; do 
-  - quilt add somefile
-  - change somefile
+for each some_file; do 
+  - quilt add <some_file>
+  - change <some_file>
 done
 quilt refresh
 quilt header -e --dep3
