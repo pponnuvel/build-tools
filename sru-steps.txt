@@ -1,8 +1,12 @@
-pull-lp-source ceph bionic # for 12.2.13
+# Do one of 3 below as needed
 
-sudo add-apt-repository cloud-archive:stein
-sudo apt update
-apt source ceph # for 13.2.9
+1. pull-lp-source ceph bionic # for 12.2.13
+
+2. sudo add-apt-repository cloud-archive:stein
+   sudo apt update
+   apt source ceph # for 13.2.9
+
+3. pull-lp-source sosreport focal
 
 quilt new bug<num>.patch
 for each file; do 
