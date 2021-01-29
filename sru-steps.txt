@@ -16,5 +16,5 @@ done
 quilt refresh
 quilt header -e --dep3
 dch -i
-debuild -S -d 
+debuild -S -d #unsigned: debuild -i -us -uc -S 
 debdiff <old dsc> <new dsc>
