@@ -29,7 +29,7 @@ and then get ouf of lxc; signing from inside lxc, via "su - username" doesn't wo
 8. Go to launchpad and create a new ppa
 
 9.Upload: dput ppa:<lp-username>/<ppa-name-from-step8> <newly-created-changes-file>
-  e.g. dput ppa:pponnuvel/PACKAGE-5.0 PACKAGE_5.0-6ubuntu1_source.changes
+  e.g. dput ppa:pponnuvel/PACKAGE-5.0 PACKAGE_VERSION_source.changes
 
 
 References:
