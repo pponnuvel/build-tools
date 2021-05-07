@@ -18,3 +18,14 @@ quilt header -e --dep3
 dch -i
 debuild -S -d #unsigned: debuild -i -us -uc -S 
 debdiff <old dsc> <new dsc>
+
+--
+
+PPA:
+----
+- Sign: debsign -k pponnuvel@gmail.com PACKAGE_5.0-6ubuntu1_source.changes
+
+- Go to launchpad and create a new ppa
+
+- Upload: dput ppa:<lp-username>/<ppa-name-from-step8> <newly-created-changes-file>
+    e.g. dput ppa:pponnuvel/PACKAGE-5.0 PACKAGE_VERSION_source.changes
