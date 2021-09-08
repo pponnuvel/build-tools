@@ -1,0 +1,11 @@
+# juju deploy mongodb
+- juju scp *.tgz mongodb/0:.
+- juju ssh mongodb/0 
+- tar -xf *.tgz 
+- mongorestore --gzip ./dump 
+# start a shell with 'mongo' cmd
+> show dbs 
+> use juju 
+> show collections 
+> db.<collection>.find() #returns everything in collection 
+> db.relations.find() 
