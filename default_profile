@@ -3,7 +3,7 @@ config:
   user.vendor-data: |
     #cloud-config
     packages:
-      - avahi-daemon vim jq silversearcher-ag libnss-mdns git build-essential
+      - avahi-daemon vim jq silversearcher-ag libnss-mdns git build-essential devscripts ubuntu-dev-tools
     users:
       - name: ponnuvel
         ssh-authorized-keys:
