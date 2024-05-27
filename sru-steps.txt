@@ -19,6 +19,7 @@ dch -i
 debuild -S -d #unsigned: debuild -i -us -uc -S 
 update-maintainer
 debdiff <old dsc> <new dsc>
+# On original, check the patch if it applies cleanly: debdiff-apply <old.dsc> <debdiff-file>
 
 --
 
