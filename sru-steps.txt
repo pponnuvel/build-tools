@@ -16,7 +16,7 @@ done
 quilt refresh
 quilt header -e --dep3
 dch -i
-debuild -S -d #unsigned: debuild -i -us -uc -S 
+debuild -S -d #unsigned: debuild -i -us -uc -S # dpkg-buildpackage -us -uc -b
 update-maintainer
 debdiff <old dsc> <new dsc>
 # On original, check the patch if it applies cleanly: debdiff-apply <old.dsc> <debdiff-file>
