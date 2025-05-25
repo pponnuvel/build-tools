@@ -26,6 +26,7 @@ debdiff <old dsc> <new dsc>
 PPA:
 ----
 - Sign: debsign -k pponnuvel@gmail.com PACKAGE_5.0-6ubuntu1_source.changes
+- To remote sign, run locally: debsign -r [user@]remotehost:/path/to/package.changes
 
 - Go to launchpad and create a new ppa
 
